@@ -1,0 +1,18 @@
+# This is a sample deck.
+
+# Lines beginning with '#' are comments and are ignored.
+# Cards and runes may be listed in any order, but there is maximum of
+# 10 cards and 4 runes per deck.
+
+Rogue Knight
+Rogue Knight
+Rogue Knight
+Rogue Knight
+Rogue Knight
+Rogue Knight
+Rogue Knight
+
+Arctic Freeze
+Frost Bite
+Tsunami
+Leaf

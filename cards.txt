@@ -1,0 +1,291 @@
+# Notes:
+#
+# Lines that start with # are treated as comments and ignored.  Blank lines
+#    are also ignored.
+#
+# Abilities that have a value should be specified as Ability:Value.  For the
+#    value, use the damage, percentage, hp value, etc.  Do not use the ability
+#    level.  For example, use Snipe:150 and not Snipe:5.
+#
+# For class and abilities, Mountain is abbreviated as Mtn everywhere.
+# Some abilities like Trap only work for the demon.  There is no need to
+#    specify such an ability for a non-demon card.
+#
+# If you want to add a card that isn't level 10, just add a card with new
+#    name and the stats/abilities that you want.
+#
+# Name,       Cost, Timing, Atk, Hp,  Class, ability[:value], ability[:value], etc.
+Abominable Rabbit,     3, 2,  185,  660, Tundra, 
+Abhorrent Gargoyle,   15, 6,  620, 1720, Swamp , Bloodthirsty:60,  Resistance
+Aethon Condor,         3, 2,  290,  360, Mtn   , Craze:20,         Bloodsucker:60
+Alicorn,              10, 4,  320, 1055, Forest, Dodge:50
+Alpha Werewolf,        6, 4,  340,  780, Forest, Parry:100
+Amphicyon,             7, 4,  360,  690, Tundra, Concentrate:100
+Ancient Oni,          15, 4,  665, 1580, Swamp , Sacrifice:100,    Rejuvenate:300
+Ankylo,               14, 6,  350, 1150, Swamp
+Aranyani,             14, 4,  680, 1710, Forest, Healing:250
+Arbiter of War,       16, 6,  580, 1550, Forest
+Archfiend Striker,    13, 4,  395, 1200, Mtn   , Advanced strike,  Mana corrupt:100
+Arctic Beastmaster,   11, 4,  400,  870, Tundra, Craze:30
+Arctic Cephalid,      16, 4,  730, 1500, Tundra, Reflection,       Dodge:60,         Bloodthirsty:70
+Arctic Defender,       6, 2,  195, 1020, Tundra, Parry:60,         Guard,            Rejuvenate:180
+Arctic Drake,         13, 4,  540, 1220, Tundra, Concentrate:80,   Resistance,       Tundra guard:300
+Arctic Guard,          7, 2,  375,  590, Tundra, Parry:60,         Dodge:35
+Arctic Hellhound,      7, 2,  280,  650, Tundra, Concentrate:60,   Reflection
+Arctic Lion,           9, 4,  390,  950, Tundra, Concentrate:60,   Counterattack:150
+Arctic Mermaid,       10, 4,  460,  810, Tundra
+Arctic Priest,         8, 4,  275,  820, Tundra, Healing:75,       Regenerate:125
+Arctic Sea Dragon,    13, 6,  470, 1570, Tundra, Craze:40,         Bloodthirsty:60,  Rejuvenate:210
+Arctic Terror,        13, 4,  460, 1040, Tundra, Tundra force:125
+Arctic Wizard,         8, 4,  395,  950, Tundra, Tundra force:100
+Armet Beetle,          5, 4,  260,  560, Forest, Parry:60,         Counterattack:120
+Armored Mantis,        9, 4,  305,  930, Forest, Snipe:300,        Concentrate:100
+Armored Sumatran,     16, 4,  540, 1830, Forest, Resistance,       Craze:80,         Counterattack:120
+Ash Sprite,           11, 4,  400,  800, Mtn   , Resurrection:55
+Assassin,              5, 2,  375,  540, Swamp , Backstab:80
+Azula,                15, 4,  610, 1500, Mtn   , Resurrection:65
+Babbler,              10, 2,  345,  800, Swamp
+Barbarian Archer,      7, 2,  300,  670, Tundra, Snipe:240
+Barbarian Chief,      11, 2,  395, 1060, Tundra, Prayer:200,       Tundra guard:200
+Barbarian Shaman,     10, 2,  340,  990, Tundra
+Barbarian Sorcerer,    6, 2,  365,  650, Tundra, Concentrate:60
+Barbarian Warcaller,   5, 2,  270,  640, Tundra, Prayer:120,       Tundra force:75
+Behemoth,             14, 6,  540, 1760, Swamp , Retaliation:160,  Immunity
+Blackstone,           14, 6,  545, 1510, Mtn   , Rejuvenate:180,   Reflection
+Blazing Lion,         13, 4,  525, 1090, Mtn   , Bloodsucker:60,   Mtn guard:250
+Blood Warrior,        13, 4,  490, 1340, Swamp , Reflection,       Bloodthirsty:60
+Blue Winged Serpent,   6, 4,  260,  720, Tundra, Snipe:150,        Dodge:35
+Boreal Wolf,          10, 4,  420, 1030, Tundra, Parry:100
+Bronze Dragon,        13, 4,  400, 1260, Forest, Resurrection:60,  Dodge:60
+Butterfly Fairy,      11, 4,  415,  870, Forest, Forest Guard:750
+Cacti Guardian,       12, 4,  425, 1360, Forest, Counterattack:180,Rejuvenate:180,   Retaliation:120
+Celestial Touchstone, 19, 4, 745, 1820, Forest, Dodge:55,         Reincarnate:2
+Cerato,               13, 6,  495, 1220, Swamp , Craze:50,         Ice shield:120
+Cerberus,             10, 4,  420,  830, Mtn
+Chaos Elemental,       5, 2,  240,  730, Mtn
+Christmas Treant,     19, 2,  655, 1670, Forest, Bloodthirsty:70,  Bloodsucker:70
+Coiled Dragon,        12, 4,  515, 1110, Tundra, Parry:140,        Concentrate:100,  Tundra force:125
+Colossal Ice Golem,   12, 4,  400, 1400, Tundra, Prayer:200,       Parry:100,        Tundra force:200
+Copper Leaf Angel,    13, 4,  460, 1020, Forest, Concentrate:100,  Dodge:45
+Crimson Shade,        12, 3,  515, 1220, Mtn   , Bloodsucker:70,   Resurrection:60
+Crocodile,             7, 4,  375,  580, Swamp , Parry:20,         Counterattack:120,Rejuvenate:150
+Crystal Golem,        11, 4,  385,  950, Tundra, Resurrection:50
+Crystal Enchantress,  13, 3,  450,  990, Tundra, Resurrection:55
+Deaths Shadow,        10, 4,  300, 1050, Swamp , Bloodthirsty:40,  Bloodsucker:60
+Demonic Imp,          13, 4,  510, 1000, Mtn   , Resistance,       Concentrate:100,  Resurrection:60
+Dharmanian,           15, 4,  680, 1720, Tundra, Prayer:320,       Tundra Force:175
+DS Turtle,            15, 4,  625, 1700, Mtn   , Bloodsucker:80
+Draconian Elder,      14, 6,  510, 1100, Mtn
+Draconian Shaman,     12, 4,  485,  920, Mtn   , Sacrifice:60,     Reincarnate:2
+Draconian Warrior,    10, 4,  480,  895, Mtn   , Mtn guard:200
+Dragon Knight,        18, 6,  670, 1610, Mtn   , Dodge:50,         Reincarnate:1,    Resistance
+Electree Folk,        11, 4,  350,  850, Forest, Rejuvenate:120,   Retaliation:120
+Electric Eel,          3, 2,  240,  490, Swamp
+Elf Captain,           9, 4,  310,  920, Forest, Regenerate:225,   Forest guard:200
+Elf Guard,             8, 4,  350,  770, Forest, Forest guard:250, Ice shield:160
+Enticing Alpaca,      14, 4,  465, 1080, Forest, Forest guard:300
+Euryale,               6, 4,  310,  650, Mtn
+Evil Empress,         16, 4,  540, 1590, Swamp , Reflection,       Mana corrupt:140
+Fallen Angel,         11, 2,  400,  750, Mtn
+Fallen Elf,           11, 4,  335, 1250, Forest, Snipe:150
+Fire Berserker,       17, 4,  670, 1775, Mtn   , Concentrate:120,  Evasion
+Fire Cursed Treant,   10, 4,  360,  880, Mtn   , Mtn guard:250
+Fire Demon,           14, 6,  670, 1710, Mtn   , Concentrate:120,  Immunity
+Fire Drake,            6, 4,  335,  720, Mtn   , Obstinacy:150,    Backstab:120,     Concentrate:120
+Fire Elemental,        7, 4,  270,  780, Forest, Forest force:75
+Fire Golem,            9, 4,  340,  870, Mtn
+Fire Gorilla,         17, 4,  635, 1560, Mtn   , Warpath:105,      Mtn force:200
+Fire Imp,              3, 2,  270,  330, Mtn
+Fire Kirin,           14, 4,  620, 1560, Forest, Rejuvenate:210,   Resurrection:70
+Fire Mage,             9, 2,  355,  750, Mtn   , Resurrection:65
+Fire Zombie,           6, 2,  380,  570, Mtn
+Firehawk,             11, 4, 430,  900, Mtn   , Backstab:80,      Reflection,       Rejuvenate:150
+Flambeau,              5, 2,  395,  600, Mtn   , Rejuvenate:120
+Flame Empress,        16, 4, 1350,  680, Mtn   , Obstinacy:450,    Resurrection:65
+Flame Protector,      12, 6,  600,  980, Mtn   , Mtn force:100
+Flame Serpent,         7, 4,  355,  650, Mtn   , Bloodsucker:50,   Mtn force:75
+Flowerbud Pixie,       4, 2,  260,  540, Forest, Healing:50,       Healing:75,       Dodge:30
+Forest Bender,        14, 4,  415, 1150, Forest, Dodge:50,         Healing:175,      Advanced strike
+Forest Giant,         12, 6,  455, 1340, Forest, Parry:160,        Rejuvenate:210
+Forest Sprite,        11, 4,  320,  850, Forest, Forest force:75,  Regenerate:125,   Forest guard:350
+Foxtail Nymph,        12, 2,  495,  975, Forest, Parry:100,        Concentrate:100,  Evasion
+Frost Troll,           6, 4,  380,  670, Tundra, Craze:30
+Frost Troll Mage,      8, 4,  375,  770, Tundra
+Frostree Folk,        13, 6,  500, 1080, Tundra, Rejuvenate:150,   Ice shield:160
+Gas Spore,             9, 4,  485,  820, Swamp , Bloodthirsty:40,  Concentrate:140
+Giant Centipede,       5, 4,  270,  770, Forest, Parry:40,         Craze:30
+Giant Crab,            8, 4,  395,  810, Mtn   , Snipe:210
+Giant Mollusc,        14, 6,  500, 1180, Mtn   , Mtn force:125,    Reincarnate:1
+Giant Mud Larva,      16, 4,  660, 1650, Swamp , Regenerate:175,   Swamp guard:300
+Giant Spider,          3, 2,  235,  450, Swamp , Concentrate:80
+Glacial Interceptor,  13, 4,  510, 1210, Tundra, Parry:120,        Wicked leech:12
+Goblin,                6, 4,  350,  520, Swamp , Concentrate:40,   Parry:80
+Goblin Chemist,        5, 4,  350,  630, Swamp , Swamp force:75
+Goblin Cupid,         10, 2,  410,  910, Swamp , Parry:100,        Resistance,       Concentrate:160
+Goblin Engineer,      16, 3,  630, 1730, Swamp , Snipe:240,        Advanced strike
+Goblin Shaman,         9, 4,  330, 1200, Swamp , Parry:60,         Swamp guard:250
+God of Pain,          16, 4,  645, 1540, Mtn   , Sacrifice:100,    Evasion
+God of War,           16, 3,  610, 1670, Swamp , Evasion
+Goddess of Order,     14, 4,  600, 1550, Forest, Regenerate:175,   Prayer:320,       D_reanimate
+Grand Lich,           14, 3,  505, 1050, Swamp , Reflection,       Parry:120,        Wicked leech:21
+Guath,                 6, 2,  325,  550, Mtn   , Resurrection:50
+Harpy,                 9, 4,  375,  900, Forest, Forest force:100
+Headless Armor,        5, 2,  275,  330, Mtn   , Resurrection:40,  Bloodthirsty:20,  Parry:80
+Headless L5,           5, 2,  180,  294, Mtn   , Resurrection:40,  Bloodthirsty:20
+Headless Horseman,     9, 2,  455,  670, Mtn   , Concentrate:140,  Backstab:120,     Dodge:35
+Hell Wolf,             4, 4,  285,  390, Mtn
+Ice Blademaster,       9, 2,  260, 1200, Tundra, Guard,            Parry:80
+Ice Demon,            10, 4,  450,  960, Tundra
+Ice Dragon,           15, 6,  630, 1690, Tundra, Dodge:50,         Immunity
+Ice Elemental,         4, 2,  210,  555, Tundra
+Ice Golem,            12, 4,  400, 1400, Tundra, Prayer:200,       Parry:100,        Tundra force:200
+Ice Knight,           19, 4,  605, 1620, Tundra, Ice shield:140
+Ice Sprite,            6, 2,  220,  810, Forest, QS_Regenerate:125
+Jack Frost,           18, 4,  610, 1610, Tundra
+Jungle Beast,          4, 2,  205,  550, Forest, Rejuvenate:30,    Dodge:25
+Kitsune,              12, 4,  460, 1360, Forest
+Kraken Defender,      14, 4,  425, 1380, Swamp , Evasion,          Dodge:50
+Latite Golem,         12, 4,  405, 1450, Mtn
+Lava Destroyer,       20, 1,  615, 1480, Mtn   , Guard,            Resurrection:60,  D_reanimate
+Leprechaun,           16, 4,  420, 1000, Forest, Regenerate:125,   Dodge:60,         Reanimate
+Light of Hydra,       18, 8,  355, 1660, Forest, QS_Reincarnate:4, D_Reincarnate:4,  Immunity
+Light Paladin,        17, 4,  500, 1850, Tundra, Wicked leech:21,  Ice Shield:130
+Lord of the Mire,     12, 4,  520, 1280, Swamp , Parry:120
+Lurker Assassin,      11, 4,  480,  815, Swamp , Resistance,       Backstab:200
+Lycan,                 9, 6,  400,  900, Swamp , Backstab:120,     Bloodthirsty:70
+Magma Crocodile,       8, 4,  440,  840, Mtn   , Counterattack:120,Bloodsucker:70,   Mtn force:100
+Magma Frostblade,     12, 4,  590, 1050, Mtn   , Mtn force:125
+Manscorpion,          13, 4,  515, 1240, Swamp , Bloodsucker:60,   Swamp force:175
+Marsh Devourer,       15, 4,  700, 1600, Swamp , Mania:160
+Mermaid Princess,     14, 4,  430, 1030, Tundra, Dodge:45
+Mischievous Pixie,     8, 2,  305,  900, Forest, Regenerate:100
+Moon Elf,              7, 4,  300,  790, Forest, Snipe:120
+Moor Ripper,          16, 4,  690, 1780, Swamp , Mania:160,        Evasion
+Moss Dragon,          15, 6,  655, 1710, Forest, Concentrate:120,  Parry:160,        Immunity
+Mountain Lion,         3, 2,  265,  420, Forest, Counterattack:120
+Mystic Monk,          10, 4,  370,  900, Tundra, Reflection
+Necromancer,          13, 4,  460,  970, Mtn   , Dodge:50,         Resurrection:60
+Night Elf Ranger,     15, 4,  625, 1740, Forest, Snipe:210,        Mania:160
+Night Kirin,          14, 4,  490, 1220, Forest, Rejuvenate:240
+Nightmare,             9, 4,  420,  900, Mtn
+Northern Gladiator,   18, 6,  665, 1580, Tundra, Sacrifice:100,    Resistance
+Northern Pioneer,     11, 4,  410,  860, Tundra, Concentrate:40,   Snipe:150
+Nuriel,               16, 2,  670, 1710, Mtn   , Mtn guard:200
+Omniscient Dragon,    18, 5,  490, 2900, Forest, Guard,            Resistance
+Orc Commander,        11, 4,  350,  850, Swamp
+Orc Guard,             6, 4,  400,  525, Swamp , Parry:80,         Counterattack:150
+Orc Scout,             8, 2,  335,  840, Swamp , Bloodthirsty:40,  Craze:60
+Orc Shaman,            9, 4,  425,  780, Swamp , Regenerate:150
+Orc Warrior,          10, 2,  455,  810, Swamp , Bloodthirsty:20,  Rejuvenate:90,    Parry:140
+Orthrus,               7, 2,  335,  580, Mtn
+Polar Bearborn,       12, 4,  560,  995, Tundra, Concentrate:80,   Backstab:200,     Dodge:60
+Prince of the Forest, 17, 4,  620, 1530, Forest, Forest force:200
+Psionic Envoy,        13, 4,  440, 1020, Mtn   , Wicked leech:12
+Queen of the Dead,    15, 6,  640, 1660, Mtn   , Rejuvenate:240,   Wicked leech:21,  Immunity
+Red Banded Dragon,    16, 4,  650, 1570, Mtn   , Bloodsucker:60,   Concentrate:120,  Reflection
+Red Lotus Sprite,      9, 4,  410,  960, Mtn   , Dodge:30
+Reindeer Warrior,     13, 4,  530, 1100, Forest, Craze:60,         Warpath:75,       Bloodsucker:60
+Rogue Knight,         12, 4,  540,  985, Tundra, Backstab:160,     Vendetta:100,     Warpath:90
+Rose Nymph,           14, 4,  540, 1060, Forest, Prayer:200,       Resurrection:60,  Forest force:175
+Sabretooth,            7, 2,  330,  700, Forest, Counterattack:120,Rejuvenate:180
+Santa,                16, 4,  600, 1505, Tundra, Reflection,       Warpath:105,      Resistance
+Santas Helper,        13, 4,  535, 1505, Tundra, Guard,            Tundra guard:300, Rejuvenate:150
+Scarab,                4, 4,  250,  600, Mtn   , Resurrection:50
+Serpent Shamanka,     15, 6,  530, 1560, Swamp , Swamp force:175,  Immunity
+Shadow Assassin,      17, 2,  900, 1220, Tundra, Backstab:320,     Dodge:55
+Sickle Beast,          8, 4,  310,  880, Forest, Parry:80
+Skeleton King,        15, 2,  655, 1280, Mtn   , Backstab:320,     Snipe:270,        Resurrection:65
+Skeleton Marshal,     13, 4,  460, 1080, Mtn   , Reflection
+Snow Crusader,        13, 4,  460, 1110, Tundra, Bloodthirsty:50,  Reflection
+Snow Lotus Sprite,     8, 4,  290,  950, Tundra
+Snow Ogre,            11, 4,  340, 1320, Tundra, Dodge:35
+Snow Troll,            3, 2,  305,  450, Tundra, Snipe:120
+Snow Troll L5,         3, 2,  215,  410, Tundra, Snipe:120
+Snowman Warrior,      13, 4,  425, 1060, Tundra, Ice shield:140
+Soul Eater,           10, 2,  425,  890, Swamp , Parry:40,         Craze:50,         Rejuvenate:150
+Spectre,               7, 2,  400,  710, Swamp , Obstinacy:100,    Bloodsucker:70
+Spiderdemon,          13, 6,  360, 1360, Swamp , Bloodthirsty:50,  Swamp force:125,  Counterattack:300
+Spirit Ghost,          8, 6,  370, 1100, Swamp , Concentrate:40,   Swamp guard:200
+Spirit Summoner,       9, 4,  315, 1040, Swamp , Swamp force:100
+Spitfire Worm,         9, 4,  395,  770, Forest, Rejuvenate:120,   Forest force:100
+Star Elf Priest,       9, 4,  365,  840, Forest, Healing:125,      Forest guard:200
+Statue of Light,      12, 4,  325, 1460, Tundra, Prayer:280,       Regenerate:150,   Tundra guard:250
+Stone Taurus,         13, 6,  470, 1590, Forest, Reflection,       Forest force:125
+Swamp Bat,             4, 2,  285,  335, Swamp , Bloodsucker:20
+Swamp Golem,          11, 6,  485, 1360, Swamp , Counterattack:240,Swamp force:150
+Swamp Wurm,            6, 2,  370,  570, Swamp
+Taiga Archon,         16, 4,  560, 1810, Tundra, Tundra guard:200, Resistance
+Taiga Cleric,         13, 6,  450, 1060, Tundra, Reanimate
+Taiga General,        15, 4,  605, 1750, Tundra, Regenerate:175
+Taurus Guard,         12, 4,  555, 1050, Swamp , Concentrate:100,  Parry:140,        Swamp guard:250
+Terra Cotta Warrior,  14, 6,  610, 1310, Tundra, Resistance,       Reflection
+Therapod,             11, 4,  450, 1050, Swamp , Retaliation:100,  Rejuvenate:120,   Craze:70
+Thorn Queen,          11, 4,  400,  885, Swamp
+Thunder Dragon,       17, 3,  630, 1520, Forest, Mana corrupt:160, Resurrection:65
+Tiger Fish,            5, 4,  245,  560, Swamp , Counterattack:90, Craze:50
+Treant Guard,         10, 4,  395, 1190, Forest, QS_Regenerate:125,Parry:100,        Rejuvenate:180
+Treant Healer,        14, 6,  365, 1180, Forest, Reincarnate:2,    Forest guard:250
+Tree Sprite,           8, 2,  325,  975, Forest, Rejuvenate:150
+Trench Gorger,         4, 2,  270,  500, Swamp
+Troglodyte,            9, 4,  410,  960, Forest, Healing:150
+Tundra Barbarian,      4, 2,  255,  480, Tundra, Parry:80
+Tundra Hunter,         5, 2,  255,  570, Tundra, Counterattack:120
+Undead Felldrake,     13, 6,  480, 1430, Swamp , Concentrate:100,  Craze:60,         Rejuvenate:210
+Undead Hunter,         8, 4,  315,  600, Mtn   , Snipe:60,         Resurrection:45
+Undead Warrior,       13, 6,  495, 1700, Swamp , Parry:40,         Retaliation:120
+Vampire Bat Demon,    13, 4,  540, 1000, Swamp , Warpath:90,       Resurrection:55,  Bloodsucker:60
+Venus Soultrap,       18, 2,  500, 1740, Swamp , Evasion
+Vine Horror,          13, 4,  475, 1050, Forest, Healing:100,      Forest guard:250
+Void Blademaster,     12, 4,  435, 1210, Forest, Counterattack:180,Parry:140,        Backstab:320
+Volcano Spiritshield,  9, 4,  450, 1130, Mtn   , Healing:150
+Vulture,               6, 2,  365,  620, Swamp , Bloodsucker:40,   Dodge:35
+Water Elemental,      12, 4,  425, 1190, Forest, Regenerate:150
+White Flying Fox,      9, 4,  380,  870, Tundra, Concentrate:40,   Retaliation:100
+White Peryton,        12, 4,  380,  950, Forest, Regenerate:100,   Dodge:40,         Immunity
+White Wolf,            3, 2,  370,  460, Forest, Bloodthirsty:30
+Wild Duron,           12, 4,  440, 1360, Swamp , Backstab:240,     Swamp guard:300
+Wild Eagle,            6, 2,  275,  700, Forest, Snipe:30,         Rejuvenate:90,    Backstab:160
+Wild Horned Lion,      5, 2,  295,  675, Forest, Parry:60,         Dodge:35
+Winged Exile,         14, 4,  760, 1760, Mtn   , Mana corrupt:160
+Winged Tiger,         16, 4,  660, 1580, Forest, Snipe:175,        Regenerate:175,   Dodge:50
+Wood Elf Archer,       5, 2,  345,  585, Forest, Snipe:210
+Wraith Mage,          10, 4,  320, 1150, Swamp , Craze:40,         Bloodthirsty:60
+Zombie Dragon,        14, 6,  640, 1610, Swamp , Immunity
+
+# Since Origin abilities aren't implemented, Crystal Emperor is described
+# as having all 4 class force and class guard abilities.
+Crystal Emperor,      16, 4,  610, 1490, Tundra, Tundra guard:280, Forest guard:280, Mtn guard:280, Swamp guard:280, Ice shield:150, Tundra force:140, Forest force:140, Mtn force:140, Swamp force:140
+
+# These are easter bunny special cards, just for fun.
+Alanine Bunny,        99, 1,    1, 5000, Obstinacy:500,    Bloodthirsty:10,  Dodge:70
+Joshua Bunny,         99, 1,    1, 5000, Obstinacy:500,    Ice shield:180
+Nicholas Bunny,       99, 1,    1, 5000, Obstinacy:500,    Craze:10,         Resistance
+Eslyn Bunny,          99, 1,    1, 5000, Obstinacy:500,    Resurrection:80
+
+# Demons
+# ------
+#
+# Demons are specified just like any other card, with the following notes:
+# 
+# 1) Demons are assumed to have Immunity, even if you don't list Immunity as
+#    one of their abilities.
+# 2) Demon cost, timing, and hp are ignored (but they shouldn't be 0).
+# 3) You don't need to specify a class for a demon.
+# 4) You should not use spaces in the demon name, so that specifying the
+#    demon on the command line is possible.
+#
+
+# These are the new demons, as reported.
+DarkTitan,            99, 4, 1800, 1000000, Retaliation:200, Curse:1000, Damnation:200
+Deucalion,            99, 4,  900, 1000000, Parry:200, Retaliation:1500, Mana corrupt:200
+Mars,                 99, 4, 1200, 1000000, Wicked leech:30, Curse:1000, Destroy
+Pandarus,             99, 4, 1500, 1000000, Mana corrupt:200, Retaliation:1500, Toxic clouds:200
+PlagueOgryn,          99, 4, 1500, 1000000, Toxic clouds:200, Snipe:2000, Hot chase:140
+SeaKing,              99, 4, 1200, 1000000, Chain attack:325, Snipe:2000, Counterattack:300
+
+DarkTitan_old,        99, 4, 1800, 1000000, Retaliation:200, Curse:1000, Lacerate
+Deucalion_old,        99, 4,  900, 1000000, Parry:200, Retaliation:1500, Exile
+Mars_old,             99, 4, 1200, 1000000, Fire god:200, Curse:1000, Destroy
+Pandarus_old,         99, 4, 1500, 1000000, Curse:400, Retaliation:1500, Toxic clouds:200
+PlagueOgryn_old,      99, 4, 1500, 1000000, Toxic clouds:200, Snipe:2000, Trap:5
+SeaKing_old,          99, 4, 1200, 1000000, Exile, Snipe:2000, Retaliation:300
