@@ -309,5 +309,5 @@ VERSION HISTORY
            multiple cards have the same lowest hp.
       Added advanced strike ability.
       Added new cards.
-1.12: Fixed rejuvenation to occur before demon counterattack.
+1.12: Fixed bloodsucker to occur before demon counterattack.
       Added GPL v3 license to source file and LICENSE file.

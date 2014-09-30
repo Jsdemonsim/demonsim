@@ -71,10 +71,11 @@
   // Not Windows.
   #include <pthread.h>
   #include <stdbool.h>
+  #include <stdint.h>
 #endif
 
-// Apple uses strcasecmp for case insenstive compare.
-// Everyone else uses stricmp.
+// I use strcasecmp() for case insensitive compares.  But apparently everyone
+// except Apple calls it stricmp().
 #if !defined(__APPLE__)
 #define strcasecmp	stricmp
 #endif
