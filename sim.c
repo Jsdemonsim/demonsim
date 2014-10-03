@@ -67,17 +67,12 @@
   #define true		1
   #define false		0
   #define bool		int
+  #define strcasecmp	stricmp
 #else
   // Not Windows.
   #include <pthread.h>
   #include <stdbool.h>
   #include <stdint.h>
-#endif
-
-// I use strcasecmp() for case insensitive compares.  But apparently everyone
-// except Apple calls it stricmp().
-#if !defined(__APPLE__)
-#define strcasecmp	stricmp
 #endif
 
 /*---------------------------------------------------------------------------*/
