@@ -1131,11 +1131,13 @@ static void RemoveCard(State *state, Card *c, int sendToGraveyard)
 		break;
 
 	    case ATTR_D_REANIMATE:
-		SimReanimate(state, "Desperation: Reanimated");
+		if (sendToGraveyard)
+		    SimReanimate(state, "Desperation: Reanimated");
 		break;
 
 	    case ATTR_D_REINCARNATE:
-		SimReincarnate(state, "Desperation: Reincarnated", level);
+		if (sendToGraveyard)
+		    SimReincarnate(state, "Desperation: Reincarnated", level);
 		break;
 
 	    default:

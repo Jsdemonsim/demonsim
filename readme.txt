@@ -311,3 +311,4 @@ VERSION HISTORY
       Added new cards.
 1.12: Fixed bloodsucker to occur before demon counterattack.
       Added GPL v3 license to source file and LICENSE file.
+1.13: Fixed Desperation abilities to not trigger from Exile.
