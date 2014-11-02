@@ -182,6 +182,7 @@ enum attrTypes {
     ATTR_OBSTINACY,
     ATTR_PARRY,
     ATTR_PRAYER,
+    ATTR_QS_PRAYER,
     ATTR_QS_REGENERATE,
     ATTR_QS_REINCARNATE,
     ATTR_REANIMATE,
@@ -329,6 +330,7 @@ typedef struct task {
 static Card *FindLowestHpCard(State *state, CardSet *cs, bool mostDamaged);
 static void CardPlayedToField(State *state, Card *c);
 static void SimAdvancedStrike(State *state);
+static void SimPrayer(State *state, int heal);
 static void SimRegenerate(State *state, const char *name, int heal);
 static void SimReincarnate(State *state, const char *attrName, int level);
 static void SimReanimate(State *state, const char *attrName);
@@ -381,6 +383,7 @@ static const AttrLookup allAttrs[] = {
     { "OBSTINACY",        ATTR_OBSTINACY },
     { "PARRY",            ATTR_PARRY },
     { "PRAYER",           ATTR_PRAYER },
+    { "QS_PRAYER",        ATTR_QS_PRAYER },
     { "QS_REGENERATE",    ATTR_QS_REGENERATE },
     { "QS_REINCARNATE",   ATTR_QS_REINCARNATE },
     { "REANIMATE",        ATTR_REANIMATE },
@@ -1861,6 +1864,9 @@ static void CardPlayedToField(State *state, Card *c)
 	AddAttr(c, &bsBuff);
     }
 
+    if (HasAttr(c, ATTR_QS_PRAYER, &level))
+	SimPrayer(state, level);
+
     if (HasAttr(c, ATTR_QS_REGENERATE, &level))
 	SimRegenerate(state, c->name, level);
 
@@ -2278,6 +2284,21 @@ static void SimHealing(State *state, const char *name, int heal)
 }
 
 /**
+ * Simulate the prayer ability.
+ *
+ * @param	state		The simulator state.
+ * @param	heal		The amount to heal the hero.
+ */
+static void SimPrayer(State *state, int heal)
+{
+    if (state->hp > 0 && state->hp < state->maxHp) {
+	int amount = MIN(heal, state->maxHp - state->hp);
+	state->hp += amount;
+	dprintf("Prayer healed %d.\n", amount);
+    }
+}
+
+/**
  * Simulate the leftmost card's physical attack on the demon.
  *
  * @param	state		The simulator state.
@@ -2514,11 +2535,7 @@ static void SimPlayerCard(State *state, int cardNum)
 		SimHealing(state, c->name, level);
 		break;
 	    case ATTR_PRAYER:
-		if (state->hp > 0 && state->hp < state->maxHp) {
-		    int amount = MIN(level, state->maxHp - state->hp);
-		    state->hp += amount;
-		    dprintf("Prayer healed %d.\n", amount);
-		}
+		SimPrayer(state, level);
 		break;
 	    case ATTR_SNIPE:
 	    case ATTR_MANA_CORRUPT:
