@@ -151,11 +151,13 @@ enum attrTypes {
     ATTR_COUNTERATTACK,
     ATTR_CRAZE,
     ATTR_CURSE,
+    ATTR_D_PRAYER,
     ATTR_D_REANIMATE,
     ATTR_D_REINCARNATE,
     ATTR_DAMNATION,
     ATTR_DEAD,
     ATTR_DESTROY,
+    ATTR_DEXTERITY,
     ATTR_DODGE,
     ATTR_EVASION,
     ATTR_EXILE,
@@ -357,10 +359,12 @@ static const AttrLookup allAttrs[] = {
     { "COUNTERATTACK",    ATTR_COUNTERATTACK },
     { "CRAZE",            ATTR_CRAZE },
     { "CURSE",            ATTR_CURSE },
+    { "D_PRAYER",      	  ATTR_D_PRAYER },
     { "D_REANIMATE",      ATTR_D_REANIMATE },
     { "D_REINCARNATE",    ATTR_D_REINCARNATE },
     { "DAMNATION",        ATTR_DAMNATION },
     { "DEAD",             ATTR_DEAD },
+    { "DEXTERITY",        ATTR_DEXTERITY },
     { "DESTROY",          ATTR_DESTROY },
     { "DODGE",            ATTR_DODGE },
     { "EXILE",            ATTR_EXILE },
@@ -1131,6 +1135,11 @@ static void RemoveCard(State *state, Card *c, int sendToGraveyard)
 		break;
 	    case ATTR_SWAMP_ATK:
 		RemoveBuffFromField(state, c, ATTR_SWAMP_ATK_BUFF, level);
+		break;
+
+	    case ATTR_D_PRAYER:
+		if (sendToGraveyard)
+		    SimPrayer(state, level);
 		break;
 
 	    case ATTR_D_REANIMATE:
@@ -2450,6 +2459,16 @@ static void SimPlayerAttack(State *state)
 		break;
 	    if (c2->hp <= 0)
 		continue;
+	    // start Added_dexterity
+	    int attributeLevel = 0;
+	    if (HasAttr(c2, ATTR_DEXTERITY, &attributeLevel)){
+		if (Rnd(state, 100) < attributeLevel) {
+			dprintf("Dexterity: %s dodges the counter.\n",
+			c2->name);
+			continue;
+		}
+	    }
+	    // end Added_dexterity		
 	    dmg = MIN(level, c2->hp);
 	    c2->hp -= dmg;
 	    dprintf("Demon counterattack hits %s for %d dmg.\n", c2->name, dmg);
