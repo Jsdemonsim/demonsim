@@ -2454,13 +2454,13 @@ static void SimPlayerAttack(State *state)
 	    numCardsToCounter = 1;
 	}
 	for (i=0;i<numCardsToCounter;i++) {
+	    int attributeLevel = 0;	// for dex
 	    Card *c2 = &f->cards[i];
 	    if (f->numCards <= i)
 		break;
 	    if (c2->hp <= 0)
 		continue;
 	    // start Added_dexterity
-	    int attributeLevel = 0;
 	    if (HasAttr(c2, ATTR_DEXTERITY, &attributeLevel)){
 		if (Rnd(state, 100) < attributeLevel) {
 			dprintf("Dexterity: %s dodges the counter.\n",
